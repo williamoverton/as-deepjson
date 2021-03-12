@@ -1,6 +1,6 @@
 {
   "name": "as-deepjson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AssemblyScript module for getting values deep in JSON easily",
   "types": "assembly/index.ts",
   "repository": {
