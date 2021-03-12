@@ -21,7 +21,7 @@ const json = `
 `.trim()
 
 const parsed = new DeepJsonParse(json)
-const value = res.get("animals.cats[0].name")
+const value = parsed.get("animals.cats[0].name")
 
 if(value != null){
     const name = value.toString()
