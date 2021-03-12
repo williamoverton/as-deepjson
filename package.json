@@ -1,0 +1,35 @@
+{
+  "name": "as-deepjson",
+  "version": "1.0.0",
+  "description": "AssemblyScript module for getting values deep in JSON easily",
+  "types": "assembly/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamoverton/as-deepjson.git"
+  },
+  "keywords": [
+    "assemblyscript",
+    "as",
+    "json",
+    "deep",
+    "parse"
+  ],
+  "author": "William Overton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williamoverton/as-deepjson/issues"
+  },
+  "homepage": "https://github.com/williamoverton/as-deepjson#readme",
+  "dependencies": {
+    "assemblyscript-json": "^1.0.0"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.18.14",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "asbuild:untouched": "asc assembly/index.ts -b build/untouched.wasm -t build/untouched.wat --sourceMap --debug",
+    "asbuild:optimized": "asc assembly/index.ts -b build/optimized.wasm -t build/optimized.wat --sourceMap --optimize",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized"
+  }
+}
